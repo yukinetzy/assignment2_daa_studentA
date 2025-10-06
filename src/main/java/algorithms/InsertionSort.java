@@ -17,7 +17,6 @@ public class InsertionSort {
             int key = arr[i];
             int j = i - 1;
 
-            // Оптимизация: early break для nearly-sorted массивов
             if (arr[j] <= key) {
                 tracker.incrementComparisons();
                 continue;
